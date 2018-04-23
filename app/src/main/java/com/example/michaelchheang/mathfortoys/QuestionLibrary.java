@@ -120,6 +120,7 @@ public class QuestionLibrary {
                         num.add(n);
                     }
                 }
+                break;
             case 3:
                 answer = x;
                 num.add(answer);
