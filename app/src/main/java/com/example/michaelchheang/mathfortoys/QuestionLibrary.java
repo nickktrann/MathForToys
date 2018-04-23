@@ -6,10 +6,10 @@ import java.lang.Math;
 
 public class QuestionLibrary {
 
-    private static int answer;
+    private int answer;
     private Random random = new Random();
-    private static ArrayList<Integer> num = new ArrayList<>();
-    private int x,y,z,n;
+    private ArrayList<Integer> num = new ArrayList<>();
+    int x,y,z,n;
 
     public String getQuestion(int j) {
         num.clear();
@@ -89,7 +89,7 @@ public class QuestionLibrary {
     public int getAnswer(){
         return answer;
     }
-    public void fillQuestions(int x,int y,int z){
+    public void fillQuestions(int x, int y, int z){
         switch(z){
             case 0:
                 answer = x + y;
@@ -100,6 +100,7 @@ public class QuestionLibrary {
                         num.add(n);
                     }
                 }
+                break;
             case 1:
                 answer = x - y;
                 num.add(answer);
@@ -109,6 +110,7 @@ public class QuestionLibrary {
                         num.add(n);
                     }
                 }
+                break;
             case 2:
                 answer = x * y;
                 num.add(answer);
@@ -127,11 +129,15 @@ public class QuestionLibrary {
                         num.add(n);
                     }
                 }
+                break;
             case 4:
                 num.add(1);
                 num.add(2);
                 num.add(3);
                 num.add(4);
+                break;
+            default:
+                System.out.println("sup " + answer);
         }
     }
 }
