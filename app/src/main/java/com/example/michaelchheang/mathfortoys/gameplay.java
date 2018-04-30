@@ -166,8 +166,8 @@ public class gameplay extends AppCompatActivity {
             mScore += (Math.pow(level + 1, 2));
             updateScore(mScore);
             Toast.makeText(gameplay.this, "correct", Toast.LENGTH_SHORT).show();
-            if(count++ == 10){
-
+            if(++count == 10){
+                startActivity(new Intent(gameplay.this, menuScreen.class));
             }
             updateQuestion();
         } else {
