@@ -39,6 +39,7 @@ public class gameplay extends AppCompatActivity {
     final Context context = this;
     private videoPlayer player;
     private int count;
+    private int limit;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -158,6 +159,11 @@ public class gameplay extends AppCompatActivity {
     public void setLevel(int n){
         level = n;
     }
+    public void setLimit(int n){
+        limit = n;
+
+    }
+
     private void updateScore(int mScore) {
         mScoreView.setText("Score: " + mScore);
     }
