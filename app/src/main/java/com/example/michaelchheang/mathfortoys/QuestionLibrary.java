@@ -115,7 +115,7 @@ public class QuestionLibrary {
                 answer = x * y;
                 num.add(answer);
                 while (num.size() < 4) {
-                    n = (x * ((random.nextInt(Math.max(x,y)))));
+                    n = (x * (random.nextInt(Math.max(x,y))));
                     if (!num.contains(n)) {
                         num.add(n);
                     }

@@ -48,6 +48,14 @@ public class menuScreen extends AppCompatActivity {
             }
         });
 
+        Button store = (Button) findViewById(R.id.storeButton);
+        store.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                startActivity(new Intent(menuScreen.this, store.class));
+            }
+        });
+
     }
     public void update(int n){
         coinsWon = n;

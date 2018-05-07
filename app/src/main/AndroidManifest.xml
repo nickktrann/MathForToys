@@ -20,7 +20,8 @@
         <activity android:name=".selectGrade" />
         <activity android:name=".settingsPage"/>
         <activity android:name=".videoPlayer"/>
-        <activity android:name=".gameplay"></activity>
+        <activity android:name=".gameplay"/>
+        <activity android:name=".store"/>
     </application>
 
 </manifest>
