@@ -14,7 +14,7 @@ public class menuScreen extends AppCompatActivity {
     private TextView money;
     private gameplay game;
     private SharedPreferences load;
-    private int coins;
+    private static int coins;
     private static int coinsWon = 0;
     private static final String PREF_NAME = "CurrencyFolder";
 
